@@ -1,3 +1,7 @@
+.mailTo {
+    text-decoration: none;
+}
+
 .button-container {
     display: flex;
 }

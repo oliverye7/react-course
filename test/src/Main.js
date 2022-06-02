@@ -11,10 +11,12 @@ function Main() {
                 <h5>https://www.oliverye.me/</h5>
             </div>
             <div className="button-container">
-                <button className="button btn1" href="mailto:oliverye@berkele.edu">
-                    <img src={email} className="btn-img"></img>
-                    Email
-                </button>
+                <a href="mailto:oliverye@berkeley.edu" className="mailTo">
+                    <button className="button btn1" href="mailto:oliverye@berkele.edu">
+                        <img src={email} className="btn-img"></img>
+                        Email
+                    </button>
+                </a>
                 <button className="button btn2">
                     <img src={linkedin} className="btn-img"></img>
                     LinkedIn
