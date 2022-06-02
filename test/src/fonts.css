@@ -1,0 +1,19 @@
+/* 
+.woff -> format("woff"),
+.ttf -> format("truetype")
+.eot -> format('embedded-opentype')
+.svg#vtks_sonhoregular _> format('svg')
+*/
+@font-face {
+  font-family: "Inter";
+  src: local("Inter"),
+  url("./fonts/Inter.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Temp";
+  src: local("Temp"),
+  url("./fonts/KdamThmorPro-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
