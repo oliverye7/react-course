@@ -11,7 +11,7 @@ function Main() {
                 <li>He can squat 69 pounds</li>
                 <li>Alan inhales juice like he breathes air</li>
                 <li>Alan likes to think about fucked up analogies in his free time</li>
-                <li>Alan's alternate name is Bart (Bartholomew) Ramsay</li>
+                <li>Alan's alternate name is Bart (Bartholomew) Ramsay (4th removed cousin)</li>
             </ul>
         </main>
     );
