@@ -1,0 +1,24 @@
+.button-container {
+    display: flex;
+}
+
+.button {
+    display: flex;
+}
+
+.btn-img {
+    width: 40px;
+}
+
+.main {
+    background-color: antiquewhite;
+}
+
+.btn1 {
+    background-color: white;
+}
+
+.btn2 {
+    color: white;
+    background-color: #2D78B7;
+}
