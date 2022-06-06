@@ -1,35 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import reportWebVitals from './reportWebVitals';
+import './index.css';
 import App from './App';
-
-
-/**
- * 
- * examples of stuff you can do:
- * 
-
-const page = (
-  <div>
-    <h1 className="header">This is a JSX</h1>
-    <p>This is a paragraph</p>
-  </div>
-)
-
-function Bruh() {
-  return (
-    <h1>bruh</h1>
-  );
-}
-*/
+import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <div>
+  <React.StrictMode>
     <App />
-  </div>
+  </React.StrictMode>
 );
-
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

@@ -1,16 +1,15 @@
-import Main from './Main.js';
-import Footer from './Footer.js';
-import './App.css';
-import headshot from './imgs/headshot.jpg'
+import Main from "./Main";
+import Footer from "./Footer";
+import headshot from './assets/headshot.jpg';
 
 function App() {
-    return (
-        <div>
-            <img src={headshot} className="photo"></img>
-            <Main />
-            <Footer />
-        </div>
-    );
+  return (
+    <div className="container mx-auto bg-[#F5F5F5] rounded-xl shadow border m-10">
+      <img src={headshot} className="rounded-xl"></img>
+      <Main />
+      <Footer />
+    </div>
+  );
 }
 
 export default App;

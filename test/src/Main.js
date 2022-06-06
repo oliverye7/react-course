@@ -1,40 +1,51 @@
-import './Main.css';
-import email from './imgs/email.png';
-import linkedin from './imgs/linkedin.png';
+import email from './assets/email.png';
+import linkedin from './assets/linkedin.png';
 
 function Main() {
     return (
-        <div className="main">
-            <div>
-                <h2>Oliver Ye</h2>
-                <h4>UC Berkeley M.E.T.</h4>
-                <h5>https://www.oliverye.me/</h5>
-            </div>
-            <div className="button-container">
-                <a href="mailto:oliverye@berkeley.edu" className="mailTo">
-                    <button className="button btn1" href="mailto:oliverye@berkele.edu">
-                        <img src={email} className="btn-img"></img>
-                        Email
-                    </button>
+        <div>
+            <p className='text-center mt-5 font-bold md-sans text-5xl'>
+                Oliver Ye
+            </p>
+            <p className='text-center text-lg pb-3 text-zinc-600'>
+                A human bean
+            </p>
+            <a href="https://oliverye.me">
+                <p className='text-center'>
+                    oliverye.me
+                </p>
+            </a>
+            <div className="flex justify-center mx-10 my-7">
+                <a href="mailto: abc@example.com" className="block flex grow justify-center px-4 py-1 w-40 rounded-lg border text-lg text-black font-medium bg-white border-slate-300 mr-4 hover:bg-slate-200 hover:border-transparent">
+                    <div className="justify-evenly">
+                        <img src={email} className="align-middle inline-block h-6 pr-4 my-2"></img>
+                        <span className="align-middle">Email</span>
+                    </div>
                 </a>
-                <button className="button btn2">
-                    <img src={linkedin} className="btn-img"></img>
-                    LinkedIn
-                </button>
+
+                <a href="mailto: abc@example.com" className="block flex grow justify-center w-40 px-4 py-1 rounded-lg border text-lg text-white font-medium bg-[#2D77B5] border-sky-600 ml-4 hover:bg-sky-600 hover:border-transparent"> 
+                    <div className="justify-evenly">
+                        <img src={linkedin} className="align-middle inline-block h-6 pr-4 my-2"></img>
+                        <span className="align-middle">LinkedIn</span>
+                    </div>
+                </a>
             </div>
-            <div>
-                <h2>About</h2>
-                <p>I am a student with a particular interest in Rohan Kumar and Alan Zu.
-                   Specifically, I am interested in the amount of weight they can lift
-                   at the RSF. I am always looking for how sexy Alan's butt looks, especially
-                   as it gets closer to bedtime.
-                </p>
-                <h2>Interests</h2>
-                <p>Cooking. Alan's ass. Skiing. RSF. Starcraft 2. Drinking water. Rohan' muscles.
-                   Sleeping. EECS. Your mom. Formula 1. UFC. Volleyball. Visiting cool places. Going
-                   monkey mode. Alcohol. Being a menace to society.
-                </p>
-            </div>
+
+            <p className="mx-10 pt-6 font-bold md-sans text-3xl">
+                About
+            </p>
+            <p className='mx-10 mt-2'>
+                I am Oliver. I am interested in Alan and Rohan. And electronics. And things that go fast. And pretty things. And working out.
+                And cool biology. And Alan's butt (they're juicy). I am coding in react with tailwindcss. I am running out of things to say.
+            </p>
+
+            <p className="mx-10 pt-6 font-bold md-sans text-3xl">
+                Interests
+            </p>
+            <p className='mx-10 mt-2'>
+                Alans butt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+            </p>
         </div>
     );
 }
