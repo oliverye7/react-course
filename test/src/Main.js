@@ -42,7 +42,7 @@ function Main() {
             <p className="mx-10 pt-6 font-bold md-sans text-3xl">
                 Interests
             </p>
-            <p className='mx-10 mt-2'>
+            <p className='mx-10 mt-5 mb-10 pb-10'>
                 Alans butt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
             </p>
