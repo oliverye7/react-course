@@ -19,7 +19,7 @@ function App() {
                     rating="5.0"
                     reviewCnt="6"
                     location="USA"
-                    price="$136"
+                    price="136"
                     tag="Dishwashing lessons with Rohan Kumar"
                     hasStatus={true}
                     status="SOLD OUT"
@@ -29,7 +29,7 @@ function App() {
                     rating="6.9"
                     reviewCnt="42"
                     location="Netherlands"
-                    price="$23"
+                    price="23"
                     tag="Daily yoga exercises with Rahul Kumar"
                     hasStatus={true}
                     status="ONLINE"
@@ -39,7 +39,7 @@ function App() {
                     rating="1.0"
                     reviewCnt="2398"
                     location="China"
-                    price="$69"
+                    price="69"
                     tag="Pot stirring courses with Bartholomew Ramsay"
                     hasStatus={false}
                     status="SOLD OUT"
@@ -49,7 +49,7 @@ function App() {
                     rating="2.4"
                     reviewCnt="15201"
                     location="Delaware St"
-                    price="$849"
+                    price="849"
                     tag="Cooking lessons with Oliver Ye"
                     hasStatus={true}
                     status="SOLD OUT"
