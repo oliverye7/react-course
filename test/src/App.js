@@ -1,13 +1,9 @@
-import Main from "./Main";
-import Footer from "./Footer";
-import headshot from './assets/headshot.jpg';
+import Main from './Main';
 
 function App() {
   return (
     <div className="container mx-auto bg-[#F5F5F5] rounded-xl">
-      <img src={headshot} className="rounded-xl"></img>
-      <Main />
-      <Footer />
+        <Main/>
     </div>
   );
 }
