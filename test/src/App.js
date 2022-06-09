@@ -1,9 +1,8 @@
-import Test from './Test';
-
+import Location from "./Location";
 function App() {
     return (
         <div>
-            <Test/>
+            <Location />
         </div>
     );
 }
