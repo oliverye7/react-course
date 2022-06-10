@@ -1,7 +1,8 @@
+import archery from './assets/archery.jpg';
 function Location(props) {
     return (
         <div>
-            Bruh
+            <img src={archery} className="w-96"></img>
         </div>
     );
 }
