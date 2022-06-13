@@ -53,8 +53,9 @@ function Main() {
                         </button>
                     </div>
                 </form>
-                <div className="grid grid-cols-1">
-                    <img src={meme} className="min-w-2/3 max-w-4/5 justify-self-center mt-10">
+                <div className="grid grid-cols-1 mx-32">
+                    {/*<img src={meme} className="min-w-2/3 max-w-4/5 justify-self-center mt-10">*/}
+                    <img src={meme} className="w-full justify-self-center mt-10">
                     </img>
                 </div>
             </label>
