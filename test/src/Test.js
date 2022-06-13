@@ -10,7 +10,16 @@ function Test() {
     const [num, setNum] = React.useState(0);
 
     function incrCount() {
-        setNum(num + 1);
+        // standard practices is to create a function inside the setter
+        // react implicitly passes in the old value into the function
+        //setNum(
+        //    function(oldValue) {
+        //        return oldValue + 1;
+        //    }
+        //)
+        setNum(prevNum => 
+            prevNum + 1
+        )
     }
 
     function decrCount() {
