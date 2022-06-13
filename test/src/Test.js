@@ -6,6 +6,7 @@ function Test() {
     const date = new Date();
     const hours = date.getHours() % 12
 
+    // Counter Section
     const [num, setNum] = React.useState(0);
 
     function incrCount() {
@@ -15,6 +16,21 @@ function Test() {
     function decrCount() {
         setNum(num - 1);
     }
+
+    // Array Display Section
+
+    const arr = ["Thing1", "Thing2"];
+
+    const [display, setDisplay] = React.useState(arr);
+
+    function addThing() {
+        console.log("btnClicked");
+        setDisplay(prevState => [...prevState, "Thing" + (prevState.length + 1)])
+        console.log(display);
+    }
+    
+    const arrDisplay = display.map(thing => <p key={thing}>{thing}</p>)
+
 
 
     return (
@@ -45,6 +61,15 @@ function Test() {
                             Down
                         </button>
                     </div>
+                </div>
+            </div>
+
+            <div className="mt-32 flex bg-sky-200">
+                <div>
+                    <button onClick={addThing} className="mb-5 justify-self-end rounded-full bg-indigo-500 w-64 h-20 text-slate-200 hover:bg-indigo-400">
+                        Click Me to add a Thing
+                    </button>
+                    {arrDisplay}
                 </div>
             </div>
         </div>
