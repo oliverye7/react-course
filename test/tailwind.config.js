@@ -6,6 +6,8 @@ module.exports = {
     extend: {
       fontFamily: {
         Poppins: "'Poppins', sans",
+        Karla: "'Karla', serif",
+        Inter: "'Inter', serif",
       }
     },
   },
