@@ -1,8 +1,21 @@
+import React from "react";
+
 function Test() {
     const firstName= "Joe";
     const lastName= "Schmoe";
     const date = new Date();
     const hours = date.getHours() % 12
+
+    const [num, setNum] = React.useState(0);
+
+    function incrCount() {
+        setNum(num + 1);
+    }
+
+    function decrCount() {
+        setNum(num - 1);
+    }
+
 
     return (
         <div className="text-3xl">
@@ -16,6 +29,23 @@ function Test() {
             <div>
                 {nums}
                 {squared}
+            </div>
+            <div className="mt-32 flex">
+                <div className="text-6xl text-white ml-24 bg-slate-800 w-56 h-56 rounded-full justify-center flex items-center">
+                    {num}
+                </div>
+                <div className="grid mx-10 content-between">
+                    <div className="align-top">
+                        <button onClick={incrCount} className="mt-5 rounded-full bg-sky-500 w-32 h-20 text-slate-200 hover:bg-sky-400">
+                            Up
+                        </button>
+                    </div>
+                    <div className="">
+                        <button onClick={decrCount} className="mb-5 justify-self-end rounded-full bg-indigo-500 w-32 h-20 text-slate-200 hover:bg-indigo-400">
+                            Down
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     );
