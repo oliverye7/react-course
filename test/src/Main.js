@@ -1,23 +1,18 @@
 import React from "react";
 import image from './assets/image.png';
 import memeData from './memeData';
+import clock from './assets/clock.jpg';
 
 function Main() {
 
-    const thingsArray = ["thing1", "thing2"]
-    const thingElements = thingsArray.map((thing) => 
-        <div key={thing}>{thing}</div>
-    )
+    const [meme, setMeme] = React.useState();
 
-    let value = "Yes"
-    let swap = true;
-    
     function handleClick(e) {
         e.preventDefault();
         console.log("Button Clicked");
-        getRandImg(memeData);
-        thingsArray.push("thing" + (thingsArray.length + 1))
-        console.log(thingsArray);
+        let source = getRandImg(memeData);
+        setMeme(source);
+        //setMeme(meme => meme = source);
     }
 
     function getRandImg(memeData) {
@@ -25,6 +20,7 @@ function Main() {
         const randIndex = Math.floor(Math.random() * memesArray.length);
         const url = memesArray[randIndex].url;
         console.log(url);
+        return url;
     }
 
 
@@ -57,6 +53,10 @@ function Main() {
                         </button>
                     </div>
                 </form>
+                <div className="grid grid-cols-1">
+                    <img src={meme} className="min-w-2/3 max-w-4/5 justify-self-center mt-10">
+                    </img>
+                </div>
             </label>
         </div>
     );
