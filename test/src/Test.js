@@ -40,6 +40,17 @@ function Test() {
     
     const arrDisplay = display.map(thing => <p key={thing}>{thing}</p>)
 
+    // toggling value states
+    const vals = ["value 1", "value 2"];
+    let currVal = 0;
+    const [val, setVal] = React.useState(currVal);
+
+    function toggleVal() {
+        console.log("toggle");
+        setVal(prevVal => prevVal === 1 ? 0 : 1 );
+    }
+
+
 
 
     return (
@@ -79,6 +90,17 @@ function Test() {
                         Click Me to add a Thing
                     </button>
                     {arrDisplay}
+                </div>
+            </div>
+
+            <div className="mt-32 flex bg-green-100 h-32 items-center">
+                <div className="grid">
+                    <button onClick={toggleVal} className="place-self-center text-2xl rounded-full bg-indigo-500 h-20 w-96 text-slate-200 hover:bg-indigo-400">
+                        Click Me to change this value &#8594;
+                    </button>
+                </div>
+                <div className="ml-20">
+                    {vals[val]}
                 </div>
             </div>
         </div>
