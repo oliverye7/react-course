@@ -1,4 +1,5 @@
 import React from "react";
+import Count from "./Count";
 
 function Test() {
     const firstName= "Joe";
@@ -24,6 +25,20 @@ function Test() {
 
     function decrCount() {
         setNum(num - 1);
+    }
+
+    const [num2, setNum2] = React.useState(0);
+
+    function incrCount2() {
+        setNum2(prevNum =>
+            prevNum + 1
+        )
+    }
+
+    function decrCount2() {
+        setNum2(prevNum =>
+            prevNum - 1
+        )
     }
 
     // Array Display Section
@@ -56,6 +71,14 @@ function Test() {
     return (
         <div className="text-3xl">
             <div>
+                You are on page 1.
+            </div>
+            <a href="/page2">
+                <button className="bg-slate-300 rounded-lg p-5 hover:bg-slate-200">
+                    Click me to go to page 2 (more random test stuff, just a cleaner page)
+                </button>
+            </a>
+            <div>
                 Hello {firstName + " " + lastName}!
             </div>
 
@@ -78,6 +101,24 @@ function Test() {
                     </div>
                     <div className="">
                         <button onClick={decrCount} className="mb-5 justify-self-end rounded-full bg-indigo-500 w-32 h-20 text-slate-200 hover:bg-indigo-400">
+                            Down
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div className="mt-32 flex">
+                <Count 
+                    val={num2}
+                />
+                <div className="grid mx-10 content-between">
+                    <div className="align-top">
+                        <button onClick={incrCount2} className="mt-5 rounded-full bg-sky-500 w-32 h-20 text-slate-200 hover:bg-sky-400">
+                            Up
+                        </button>
+                    </div>
+                    <div className="">
+                        <button onClick={decrCount2} className="mb-5 justify-self-end rounded-full bg-indigo-500 w-32 h-20 text-slate-200 hover:bg-indigo-400">
                             Down
                         </button>
                     </div>
