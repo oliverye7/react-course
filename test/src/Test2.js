@@ -1,6 +1,7 @@
 import React from "react";
 import P2Header from "./P2Header";
 import P2Body from "./P2Body";
+import Box from "./Box";
 
 function Test2() {
     const userName = "Goob";
@@ -30,14 +31,15 @@ function Test2() {
                 </div>
                 <div className="w-12"></div>
             </div>
-            <div>
-                <div className="mt-14 font-bold text-4xl ml-10">
+            <div className="ml-10">
+                <div className="mt-14 font-bold text-4xl">
                     Boxes Challenge: 
                 </div>
-                <div className="ml-10 mt-3 mr-64">
+                <div className="mt-3 mr-64">
                     Given a datasheet of initial box states, map + render them as filled or unfilled. Then on user click of each box,
                     Toggle the boxes to filled or unfilled states
                 </div>
+                <Box />
             </div>
         </div>
     );
