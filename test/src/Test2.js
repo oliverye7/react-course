@@ -35,6 +35,9 @@ function Test2(props) {
         })
     }
     
+    const [messages, setMessages] = React.useState(["a", "b"])
+    let showMessages;
+    showMessages = messages.length > 0;
 
     return (
         <div className="text-3xl">
@@ -74,6 +77,26 @@ function Test2(props) {
                 <div className="grid grid-rows-6">
                     {BoxDisplay}
                 </div>
+            </div>
+            <div className="flex mb-10">
+                <div className="w-12"></div>
+                <div className="self-auto bg-black h-1 w-full">
+                </div>
+                <div className="w-12"></div>
+            </div>
+            <div className="ml-10 mb-10">
+                <div>
+                    If the user has more than 0 unread messages, display the text. If the user has == 0 unread messages, display nothing.
+                    At the time of writing this challenge, I don't know how to take form inputs yet, so you can toggle the unread messages
+                    thingy manually in the appropriate place in the Test2.js file
+                </div>
+                {showMessages && 
+                    <div className="my-5 font-bold text-5xl">
+                        You have {messages.length} unread messages
+                    </div>
+                }
+            </div>
+            <div className="mb-96">
             </div>
         </div>
     );
