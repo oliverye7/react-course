@@ -1,4 +1,5 @@
 import JokeCard from "./JokeCard";
+import JokeCardTwo from "./JokeCardTwo";
 import jokesData from "./jokesData";
 import React from "react";
 
@@ -16,6 +17,15 @@ function Main() {
                 />
     }) 
 
+    const jokeTwo = jokesData.map((joke) => {
+        return <JokeCardTwo
+                key = {joke.id}
+                id = {joke.id}
+                setup = {joke.setup}
+                punchline = {joke.punchline}
+                />
+    })
+
 
     function toggleJoke(id) {
         console.log(id);
@@ -29,6 +39,8 @@ function Main() {
     return (
         <div>
             {jokeElements}
+            <div className="bg-black my-5 h-1"></div>
+            {jokeTwo}
         </div>
     );
 }
