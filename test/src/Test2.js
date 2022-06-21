@@ -21,14 +21,13 @@ function Test2(props) {
                         id = {box.id}
                         on = {box.on}
                         color = {fillColor}
-                        toggle = {handleBoxClick}
+                        toggle = {toggleBox}
                         />
                     </div>
                </button>
     })
 
-    function handleBoxClick(id) {
-        console.log("Button Clicked: " + id);
+    function toggleBox(id) {
         setBoxes(prevSquares => {
             return prevSquares.map((square) => {
                 return square.id === id ? {...square, on: !square.on} : square
