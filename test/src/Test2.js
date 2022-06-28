@@ -44,9 +44,16 @@ function Test2(props) {
             <div>
                 You are on page 2.
             </div>
-            <a href="/">
+            <div className="mb-6">
+                <a href="/">
+                    <button className="bg-slate-300 rounded-lg p-5 hover:bg-slate-200">
+                        Click me to go to page 1 (more random test stuff, just a cleaner page)
+                    </button>
+                </a>
+            </div>
+            <a href="/page3">
                 <button className="bg-slate-300 rounded-lg p-5 hover:bg-slate-200">
-                    Click me to go to page 1 (more random test stuff, just a cleaner page)
+                    Click me to go to page 3 (more random test stuff, just a cleaner page)
                 </button>
             </a>
             <div className="mt-16">
