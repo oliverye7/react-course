@@ -1,13 +1,24 @@
-import Navbar from './Navbar.js';
-import Main from './Main.js';
-import './App.css';
+import Test from './Test';
+import Test2 from './Test2';
+import Test3 from './Test3';
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route, Routes, Link } from "react-router-dom";
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
-    return(
-        <div className="body">
-            <Navbar />
-            <Main />
-        </div>
+    const [blue, setBlue] = React.useState(false);
+    function changeColor() {
+        console.log("color switched")
+        setBlue(prevCol => prevCol = !prevCol)
+    }
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Test/>}></Route>
+                <Route path="/page2" element={<Test2 colorSwap={changeColor} blueMode={blue}/>}></Route>
+                <Route path="/page3" element={<Test3/>}></Route>
+            </Routes>
+        </BrowserRouter>
     );
 }
 
